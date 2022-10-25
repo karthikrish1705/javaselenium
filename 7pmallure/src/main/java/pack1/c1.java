@@ -28,15 +28,14 @@ public class c1 {
 		ob.get("http://www.google.com");
 		ob.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		
+		ob.navigate().refresh();
 		
 		System.out.println(ob.getTitle()); //5
 		
 		System.out.println(ob.getCurrentUrl());//5
 		
 		WebElement ele = ob.findElementByLinkText("jikj"); //5
-		
-		ele.click(); //5
+	
 		Thread.sleep(3000);
 		ob.quit(); //5
 	}
