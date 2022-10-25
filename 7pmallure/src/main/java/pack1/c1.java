@@ -28,7 +28,7 @@ public class c1 {
 		ob.get("http://www.google.com");
 		ob.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		ob.navigate().refresh();  //5
+		
 		
 		System.out.println(ob.getTitle()); //5
 		
