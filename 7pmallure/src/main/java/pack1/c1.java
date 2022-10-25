@@ -18,7 +18,7 @@ public class c1 {
 	@Severity(SeverityLevel.NORMAL)
 
 	@Test
-	public void t1()
+	public void t1() throws InterruptedException
 	{
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
@@ -37,6 +37,7 @@ public class c1 {
 		WebElement ele = ob.findElementByLinkText("jikj"); //5
 		
 		ele.click(); //5
+		Thread.sleep(3000);
 		ob.quit(); //5
 	}
 }
